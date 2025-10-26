@@ -1,52 +1,5 @@
 # LaTeX Report Template
 
-A clean, professional LaTeX template for academic reports, technical documentation, and project write-ups. This template is designed to be easily customizable and includes modern formatting with proper document structure.
-
-## Features
-
-- Clean and professional design
-- Modular structure for easy customization
-- Configured for biblatex with biber backend
-- Custom headers and footers
-- Code listing support with syntax highlighting
-- Support for figures, tables, and mathematical equations
-- Subfile support for better organization
-- Pre-configured for A4 paper size
-
-## Quick Start
-
-### Prerequisites
-
-You need a LaTeX distribution installed on your system:
-- **Windows**: [MiKTeX](https://miktex.org/) or [TeX Live](https://www.tug.org/texlive/)
-- **macOS**: [MacTeX](https://www.tug.org/mactex/)
-- **Linux**: TeX Live (usually available in package manager)
-
-### Compilation
-
-#### Using Make (Recommended)
-
-```bash
-# Compile the document
-make
-
-# Clean auxiliary files
-make clean
-
-# Clean everything including PDF
-make cleanall
-```
-
-#### Manual Compilation
-
-```bash
-pdflatex main.tex
-biber main
-pdflatex main.tex
-pdflatex main.tex
-```
-
-## Customization
 
 ### Basic Configuration
 
@@ -184,29 +137,3 @@ Adjust in `setup/formatting.tex`:
 \usepackage[a4paper, left=3cm, right=3cm, top=3cm, bottom=3cm]{geometry}
 ```
 
-## Troubleshooting
-
-### Bibliography not showing up
-- Make sure you run `biber main` after the first `pdflatex` run
-- Check that `references.bib` has valid entries
-- Ensure you've cited at least one reference with `\cite{...}`
-
-### Missing packages
-- Most LaTeX distributions include all required packages
-- If a package is missing, use your distribution's package manager to install it
-
-### Compilation errors
-- Check the `.log` file for detailed error messages
-- Common issues: missing `\end{...}`, unclosed braces, special characters
-
-## License
-
-This template is released into the public domain. Feel free to use, modify, and distribute as needed.
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit issues or pull requests to improve this template.
-
-## Acknowledgments
-
-This template uses standard LaTeX packages and follows common academic formatting conventions.
