@@ -1,0 +1,79 @@
+% ============================================================================
+% MAIN DOCUMENT FILE
+% ============================================================================
+% LaTeX Report Template
+% For customization, edit config.tex
+
+\documentclass[11pt,a4paper]{report}
+\usepackage[english]{babel}
+
+% ----------------------------------------------------------------------------
+% LOAD SETUP FILES
+% ----------------------------------------------------------------------------
+\input{setup/packages}
+\input{setup/formatting}
+\input{setup/listings}
+
+% ----------------------------------------------------------------------------
+% LOAD CONFIGURATION
+% ----------------------------------------------------------------------------
+\input{config}
+
+% ============================================================================
+% DOCUMENT BEGINS
+% ============================================================================
+
+\begin{document}
+
+% ----------------------------------------------------------------------------
+% FRONT MATTER
+% ----------------------------------------------------------------------------
+
+% Title Page
+\input{frontmatter/titlepage}
+
+% Abstract (optional - comment out if not needed)
+% \subfile{frontmatter/abstract}
+% \clearpage
+
+% Table of Contents
+\tableofcontents
+\clearpage
+
+% ============================================================================
+% MAIN CONTENT
+% ============================================================================
+
+\chapter{Introduction}
+\label{chap:introduction}
+\subfile{sections/01_introduction}
+
+\chapter{Methodology}
+\label{chap:methodology}
+\subfile{sections/02_methodology}
+
+\chapter{Results}
+\label{chap:results}
+\subfile{sections/03_results}
+
+\chapter{Conclusion}
+\label{chap:conclusion}
+\subfile{sections/04_conclusion}
+
+% ============================================================================
+% APPENDICES (optional - comment out if not needed)
+% ============================================================================
+
+\appendix
+
+\chapter{Additional Information}
+\label{app:additional}
+\subfile{appendices/appendix_a}
+
+% ============================================================================
+% BIBLIOGRAPHY
+% ============================================================================
+
+\printbibliography[heading=bibintoc]
+
+\end{document}

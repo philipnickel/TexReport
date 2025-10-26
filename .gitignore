@@ -1,0 +1,111 @@
+# LaTeX auxiliary files
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+.*.lb
+*.nav
+*.snm
+
+# Bibliography
+*.bbl
+*.bcf
+*.blg
+*-blx.aux
+*-blx.bib
+*.run.xml
+
+# Build files
+*.dvi
+*.ps
+*.synctex.gz
+*.fdb_latexmk
+
+# Glossaries
+*.acn
+*.acr
+*.glg
+*.glo
+*.gls
+*.glsdefs
+*.lzo
+*.lzs
+
+# Hyperref
+*.brf
+
+# Listings
+*.lol
+
+# Microtypography
+*.mt
+*.mtc[0-9]*
+*.slf[0-9]*
+*.slt[0-9]*
+*.stc[0-9]*
+
+# Minted
+_minted*
+*.pyg
+
+# Nomenclature
+*.nlg
+*.nlo
+*.nls
+
+# TikZ & PGF
+*.dpth
+*.md5
+*.auxlock
+
+# Todonotes
+*.tdo
+
+# Temporary files
+*.bak
+*.swp
+*~
+*.tmp
+
+# Build directories
+_build/
+_tex_aux/
+build/
+output/
+
+# Python-related
+*.pyc
+*.pyo
+__pycache__/
+venv/
+.env
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# PDF output (comment out if you want to track PDFs)
+main.pdf
+
+# Keep example figures
+!figures/*.pdf
+!figures/**/*.pdf

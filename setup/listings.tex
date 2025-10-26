@@ -1,0 +1,54 @@
+% ============================================================================
+% CODE LISTINGS CONFIGURATION
+% ============================================================================
+
+\usepackage{listings}
+
+% ----------------------------------------------------------------------------
+% COLOR DEFINITIONS
+% ----------------------------------------------------------------------------
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codegreen}{rgb}{0,0.5,0}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolor}{rgb}{0.97,0.97,0.97}
+
+% ----------------------------------------------------------------------------
+% LISTING STYLE
+% ----------------------------------------------------------------------------
+\lstdefinestyle{myStyle}{
+    backgroundcolor=\color{backcolor},
+    commentstyle=\color{codegreen}\itshape,
+    keywordstyle=\color{blue}\bfseries,
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=8pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=4,
+    frame=single,
+    rulecolor=\color{codegray!30},
+    xleftmargin=15pt,
+    framexleftmargin=12pt
+}
+
+\lstset{style=myStyle}
+
+% ----------------------------------------------------------------------------
+% USAGE EXAMPLE
+% ----------------------------------------------------------------------------
+% To include code in your document, use:
+%
+% \begin{lstlisting}[language=Python, caption={Example code}]
+% def hello_world():
+%     print("Hello, World!")
+% \end{lstlisting}
+%
+% Or include a file:
+% \lstinputlisting[language=Python, caption={My script}]{code/script.py}

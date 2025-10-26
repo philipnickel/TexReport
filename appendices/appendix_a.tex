@@ -1,0 +1,87 @@
+% ============================================================================
+% APPENDIX A
+% ============================================================================
+
+\documentclass[../main.tex]{subfiles}
+
+\begin{document}
+
+\section{Additional Mathematical Derivations}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. This appendix provides detailed derivations of the equations used in the main text.
+
+Starting from the fundamental relationship in Equation~\ref{eq:newton}, we can derive:
+
+\begin{equation}
+    \v{x}(t) = \v{x}_0 + \v{v}_0 t + \frac{1}{2}\v{a}t^2
+    \label{eq:position}
+\end{equation}
+
+where $\v{x}_0$ is the initial position, $\v{v}_0$ is the initial velocity, and $t$ is time.
+
+\section{Supplementary Data}
+
+Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. The following table provides additional experimental data not included in the main results section.
+
+\begin{table}[H]
+\centering
+\caption{Supplementary experimental data}
+\label{tab:supplementary}
+\begin{tabular}{lcccc}
+\hline
+\textbf{Trial} & \textbf{Value 1} & \textbf{Value 2} & \textbf{Value 3} & \textbf{Mean} \\
+\hline
+1 & 42.3 & 43.1 & 41.8 & 42.4 \\
+2 & 45.2 & 44.9 & 45.6 & 45.2 \\
+3 & 41.1 & 40.8 & 41.4 & 41.1 \\
+4 & 43.7 & 43.5 & 43.9 & 43.7 \\
+5 & 44.2 & 44.8 & 44.0 & 44.3 \\
+\hline
+\end{tabular}
+\end{table}
+
+\section{Extended Code Listings}
+
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Below is the complete implementation of the algorithm:
+
+\begin{lstlisting}[language=Python, caption={Complete algorithm implementation}]
+import numpy as np
+
+class DataProcessor:
+    """
+    A class for processing experimental data.
+    """
+
+    def __init__(self, config):
+        self.config = config
+        self.data = None
+
+    def load_data(self, filename):
+        """Load data from file."""
+        self.data = np.loadtxt(filename)
+        return self.data
+
+    def process(self):
+        """Process the loaded data."""
+        if self.data is None:
+            raise ValueError("No data loaded")
+
+        # Apply processing steps
+        result = np.mean(self.data, axis=0)
+        result = self._normalize(result)
+
+        return result
+
+    def _normalize(self, data):
+        """Normalize the data."""
+        return (data - np.min(data)) / (np.max(data) - np.min(data))
+
+# Example usage
+processor = DataProcessor(config={'method': 'standard'})
+processor.load_data('data.txt')
+result = processor.process()
+\end{lstlisting}
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+\end{document}

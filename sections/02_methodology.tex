@@ -1,0 +1,72 @@
+% ============================================================================
+% METHODOLOGY
+% ============================================================================
+
+\documentclass[../main.tex]{subfiles}
+
+\begin{document}
+
+\section{Theoretical Framework}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+The fundamental equation governing this system can be expressed as:
+\begin{equation}
+    \v{F} = m \v{a}
+    \label{eq:newton}
+\end{equation}
+
+where $\v{F}$ represents the force vector, $m$ is the mass, and $\v{a}$ is the acceleration vector.
+
+\section{Mathematical Model}
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. The inner product of two vectors $\v{u}$ and $\v{v}$ in the vector space $\vs{V}$ is given by:
+
+\begin{equation}
+    \ip{\v{u}}{\v{v}} = \sum_{i=1}^{n} u_i v_i
+    \label{eq:inner_product}
+\end{equation}
+
+Furthermore, the norm of a vector can be computed as:
+\begin{equation}
+    \norm{\v{x}} = \sqrt{\ip{\v{x}}{\v{x}}}
+    \label{eq:norm}
+\end{equation}
+
+\section{Implementation Approach}
+
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam. The implementation follows these key steps:
+
+\begin{enumerate}
+    \item \textbf{Data Preparation:} Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit
+    \item \textbf{Algorithm Design:} Sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt
+    \item \textbf{Validation:} Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet
+    \item \textbf{Optimization:} Consectetur adipisci velit, sed quia non numquam eius modi
+\end{enumerate}
+
+\section{Example Code}
+
+Below is an example of the implementation:
+
+\begin{lstlisting}[language=Python, caption={Example implementation}]
+def calculate_result(data, parameters):
+    """
+    Calculate the result based on input data and parameters.
+
+    Args:
+        data: Input data array
+        parameters: Configuration parameters
+
+    Returns:
+        Computed result
+    """
+    result = 0
+    for i, value in enumerate(data):
+        result += value * parameters[i]
+
+    return result / len(data)
+\end{lstlisting}
+
+At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.
+
+\end{document}
